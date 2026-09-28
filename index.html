@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fairish Ayan — M.Sc. AI Student &amp; Aspiring AI Researcher</title>
+  <meta name="description" content="Portfolio of Fairish Ayan — M.Sc. Artificial Intelligence student and aspiring researcher exploring embodied intelligence, human-AI interaction, constraint optimization, and intelligent systems.">
+  <meta name="author" content="Fairish Ayan">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Subtle custom cursor (disabled on touch & reduced motion) -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+       ═══════════════════════════════════════════ -->
+  <header class="nav-header">
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo" aria-label="Fairish Ayan — Home">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-text">Fairish Ayan</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <div class="nav-links" id="nav-links" role="menubar">
+        <a href="#about" class="nav-link" role="menuitem">About</a>
+        <a href="#research" class="nav-link" role="menuitem">Research &amp; Projects</a>
+        <a href="#education" class="nav-link" role="menuitem">Education</a>
+        <a href="#skills" class="nav-link" role="menuitem">Skills</a>
+        <a href="#contact" class="nav-link" role="menuitem">Contact</a>
+        <a href="#contact" class="nav-cta" role="menuitem">Get in Touch</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ═══════════════════════════════════════════
+         HERO SECTION
+         ═══════════════════════════════════════════ -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <!-- Artwork-derived ambient light and floating particles -->
+      <div class="hero-backdrop" aria-hidden="true">
+        <div class="ambient-glow glow-cyan"></div>
+        <div class="ambient-glow glow-purple"></div>
+        <div class="ambient-glow glow-coral"></div>
+        <div class="hero-floating-bubbles"></div>
+      </div>
+
+      <div class="hero-container">
+        <!-- Text presentation -->
+        <div class="hero-text-col">
+          <div class="hero-badge">
+            <span class="badge-pulse" aria-hidden="true"></span>
+            <span class="badge-text">M.Sc. Artificial Intelligence Student &amp; Aspiring AI Researcher</span>
+          </div>
+
+          <h1 class="hero-heading">
+            Exploring intelligence through
+            <span class="gradient-text">algorithms, systems</span>
+            &amp; purposeful research.
+          </h1>
+
+          <p class="hero-bio">
+            I am <strong>Fairish Ayan</strong>. I turn unclear, real-world constraints—from rural teacher shortages to student behavioral engagement—into structured system architectures and algorithmic solutions. Currently pursuing my M.Sc. in AI, actively exploring embodied intelligence and adaptive human-AI interaction.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#research" class="btn btn-primary">
+              <span>Explore My Work</span>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M4.167 10h11.666M10.833 5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#about" class="btn btn-secondary">
+              <span>Research Interests</span>
+            </a>
+            <a href="#contact" class="btn btn-tertiary">
+              <span>Contact</span>
+            </a>
+          </div>
+
+          <div class="hero-metrics" aria-label="Academic and research focus highlights">
+            <div class="metric-pill">
+              <span class="metric-dot dot-cyan" aria-hidden="true"></span>
+              <span class="metric-label">Focus</span>
+              <span class="metric-value">Embodied AI &amp; CSP</span>
+            </div>
+            <div class="metric-pill">
+              <span class="metric-dot dot-purple" aria-hidden="true"></span>
+              <span class="metric-label">Status</span>
+              <span class="metric-value">M.Sc. Ongoing (Sem 1)</span>
+            </div>
+            <div class="metric-pill">
+              <span class="metric-dot dot-coral" aria-hidden="true"></span>
+              <span class="metric-label">Seeking</span>
+              <span class="metric-value">Research Internships</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Artwork visual centerpiece -->
+        <div class="hero-artwork-col">
+          <div class="artwork-showcase" id="artworkShowcase">
+            <!-- Cutout silhouette decorative tiers inspired by the mural -->
+            <div class="cutout-layer layer-back" aria-hidden="true"></div>
+            <div class="cutout-layer layer-mid" aria-hidden="true"></div>
+
+            <!-- Main artwork frame -->
+            <div class="artwork-frame">
+              <div class="artwork-glare" aria-hidden="true"></div>
+              <img
+                src="file.jpg"
+                alt="Undersea relief artwork composed of layered organic papercut shapes in cyan, marine blue, deep navy, and lavender, with floating bubbles and coral motifs — the visual inspiration for Fairish Ayan's research portfolio"
+                class="artwork-img"
+                width="1300"
+                height="700"
+                loading="eager"
+              >
+              <div class="artwork-caption">
+                <span class="caption-tag">Visual Source</span>
+                <span class="caption-text">Layered Marine Relief Mural — Symbolic of algorithmic depth &amp; organic intelligence</span>
+              </div>
+            </div>
+
+            <!-- Floating artwork-derived decorative disks (bubbles & coral spots) -->
+            <div class="float-disc disc-cyan" data-depth="0.04" aria-hidden="true"></div>
+            <div class="float-disc disc-purple" data-depth="0.06" aria-hidden="true"></div>
+            <div class="float-disc disc-coral" data-depth="0.03" aria-hidden="true"></div>
+            <div class="float-disc disc-teal" data-depth="0.05" aria-hidden="true"></div>
+            <div class="float-disc disc-mint" data-depth="0.07" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Organic wave cutout transition into About -->
+      <div class="section-divider divider-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,32 C240,95 480,10 720,64 C960,118 1200,42 1440,75 L1440,120 L0,120 Z" fill="var(--bg-card)"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         ABOUT SECTION
+         ═══════════════════════════════════════════ -->
+    <section id="about" class="section section-about" aria-labelledby="about-heading">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <div class="section-tag">
+            <span class="tag-gem" aria-hidden="true"></span>
+            <span>Evolution &amp; Inquiry</span>
+          </div>
+          <h2 class="section-title" id="about-heading">About My Academic Journey</h2>
+          <p class="section-subtext">
+            Tracing the deliberate transition from practical software engineering to structured research inquiry.
+          </p>
+        </div>
+
+        <!-- The Journey: Visual Progression Path -->
+        <div class="journey-experience reveal">
+          <div class="journey-header">
+            <h3 class="journey-title">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" stroke="var(--cyan)" stroke-width="2"/>
+                <path d="M12 6v6l4 2" stroke="var(--cyan)" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              My Trajectory: From Code to Research
+            </h3>
+            <p class="journey-sub">Click each stage to explore how my technical perspective matured over time.</p>
+          </div>
+
+          <div class="journey-track" role="tablist" aria-label="Journey milestones">
+            <!-- Stage 1 -->
+            <button class="journey-step active" role="tab" aria-selected="true" aria-controls="journey-panel" data-step="1">
+              <div class="step-marker" aria-hidden="true">
+                <span class="marker-core"></span>
+              </div>
+              <div class="step-meta">
+                <span class="step-phase">Stage 01</span>
+                <span class="step-name">Coding Foundations</span>
+              </div>
+            </button>
+
+            <!-- Stage 2 -->
+            <button class="journey-step" role="tab" aria-selected="false" aria-controls="journey-panel" data-step="2">
+              <div class="step-marker" aria-hidden="true">
+                <span class="marker-core"></span>
+              </div>
+              <div class="step-meta">
+                <span class="step-phase">Stage 02</span>
+                <span class="step-name">Full-Stack Architecture</span>
+              </div>
+            </button>
+
+            <!-- Stage 3 -->
+            <button class="journey-step" role="tab" aria-selected="false" aria-controls="journey-panel" data-step="3">
+              <div class="step-marker" aria-hidden="true">
+                <span class="marker-core"></span>
+              </div>
+              <div class="step-meta">
+                <span class="step-phase">Stage 03</span>
+                <span class="step-name">Problem Discovery</span>
+              </div>
+            </button>
+
+            <!-- Stage 4 -->
+            <button class="journey-step" role="tab" aria-selected="false" aria-controls="journey-panel" data-step="4">
+              <div class="step-marker" aria-hidden="true">
+                <span class="marker-core"></span>
+              </div>
+              <div class="step-meta">
+                <span class="step-phase">Stage 04</span>
+                <span class="step-name">Research Orientation</span>
+              </div>
+            </button>
+          </div>
+
+          <!-- Dynamic Journey Detail Panel -->
+          <div class="journey-card" id="journey-panel" role="tabpanel">
+            <div class="journey-card-content">
+              <div class="journey-stage-badge" id="journeyBadge">Stage 01 · Foundations</div>
+              <h4 class="journey-stage-heading" id="journeyHeading">Early Immersion in Software Development</h4>
+              <p class="journey-stage-text" id="journeyDesc">
+                Began with a software-first curiosity—mastering core languages (Python, Java, JavaScript, PHP) and database systems. Focus was on building clean features, understanding syntax, and learning software lifecycles.
+              </p>
+              <div class="journey-takeaway" id="journeyTakeaway">
+                <span class="takeaway-label">Key Realization:</span>
+                <span class="takeaway-text">Software is the delivery mechanism; the real challenge lies in mathematical formulation and algorithmic problem modeling.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Research Interests: Connected Interactive Node Ecosystem -->
+        <div class="interests-experience reveal" id="interests">
+          <div class="interests-header">
+            <div class="interests-title-wrap">
+              <span class="section-tag-inline">Inquiry Constellation</span>
+              <h3 class="interests-title">Connected Research Interests</h3>
+            </div>
+            <p class="interests-sub">
+              Hover or select any interest node to see its research definition and connection to ongoing work.
+            </p>
+          </div>
+
+          <div class="interests-grid">
+            <!-- Node Canvas / Buttons -->
+            <div class="interests-nodes" role="tablist" aria-label="Research interests">
+              <button class="interest-node node-cyan active" role="tab" aria-selected="true" data-interest="embodied">
+                <span class="node-glow" aria-hidden="true"></span>
+                <span class="node-icon" aria-hidden="true">🤖</span>
+                <span class="node-title">Embodied General Intelligence</span>
+                <span class="node-sub">Physical Environments</span>
+              </button>
+
+              <button class="interest-node node-purple" role="tab" aria-selected="false" data-interest="hai">
+                <span class="node-glow" aria-hidden="true"></span>
+                <span class="node-icon" aria-hidden="true">🤝</span>
+                <span class="node-title">Human-AI Interaction</span>
+                <span class="node-sub">Adaptive Interfaces</span>
+              </button>
+
+              <button class="interest-node node-coral" role="tab" aria-selected="false" data-interest="ethics">
+                <span class="node-glow" aria-hidden="true"></span>
+                <span class="node-icon" aria-hidden="true">⚖️</span>
+                <span class="node-title">AI Ethics &amp; Governance</span>
+                <span class="node-sub">Accountability &amp; Safety</span>
+              </button>
+
+              <button class="interest-node node-teal" role="tab" aria-selected="false" data-interest="constraint">
+                <span class="node-glow" aria-hidden="true"></span>
+                <span class="node-icon" aria-hidden="true">🧩</span>
+                <span class="node-title">Constraint Optimization</span>
+                <span class="node-sub">Discrete Scheduling &amp; CSP</span>
+              </button>
+
+              <button class="interest-node node-mint" role="tab" aria-selected="false" data-interest="nlp">
+                <span class="node-glow" aria-hidden="true"></span>
+                <span class="node-icon" aria-hidden="true">💬</span>
+                <span class="node-title">Applied NLP</span>
+                <span class="node-sub">Query Resolution &amp; Chatbots</span>
+              </button>
+
+              <button class="interest-node node-blue" role="tab" aria-selected="false" data-interest="agents">
+                <span class="node-glow" aria-hidden="true"></span>
+                <span class="node-icon" aria-hidden="true">🌐</span>
+                <span class="node-title">Intelligent Agents</span>
+                <span class="node-sub">Perception, Reasoning &amp; Action</span>
+              </button>
+            </div>
+
+            <!-- Active Interest Detail Display -->
+            <div class="interest-preview-panel" aria-live="polite">
+              <div class="preview-card">
+                <div class="preview-badge" id="interestBadge">Current M.Sc. Inquiry</div>
+                <div class="preview-header">
+                  <span class="preview-icon" id="interestIcon">🤖</span>
+                  <h4 class="preview-title" id="interestTitle">Embodied General Intelligence</h4>
+                </div>
+                <p class="preview-desc" id="interestDesc">
+                  Investigating how AI models transcend pure text and screen domains to perceive, reason, and act inside physical dynamic environments. Interested in sensory integration, continuous state spaces, and spatial problem-solving.
+                </p>
+                <div class="preview-connection">
+                  <span class="conn-label">Project &amp; Study Connection:</span>
+                  <p class="conn-text" id="interestConn">
+                    Informs foundational coursework in AI and Knowledge Representation at Sacred Heart College, exploring transition from symbolic reasoning to physical robotic agency.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cutout divider -->
+      <div class="section-divider divider-curve" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,0 C480,80 960,80 1440,0 L1440,80 L0,80 Z" fill="var(--bg-body)"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         RESEARCH & PROJECTS SECTION
+         ═══════════════════════════════════════════ -->
+    <section id="research" class="section section-projects" aria-labelledby="research-heading">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <div class="section-tag">
+            <span class="tag-gem" aria-hidden="true"></span>
+            <span>Case Studies</span>
+          </div>
+          <h2 class="section-title" id="research-heading">Research &amp; Projects</h2>
+          <p class="section-subtext">
+            Detailed case studies tackling real societal challenges through constraint modeling, behavioral verification, and robust systems architecture.
+          </p>
+        </div>
+
+        <div class="projects-list">
+          <!-- Project 1: Smart Classroom and Timetable Scheduler -->
+          <article class="project-case-study reveal" aria-labelledby="proj1-title">
+            <div class="case-study-body">
+              <div class="case-visual visual-network" aria-hidden="true">
+                <!-- SVG network/constraint visualization motif -->
+                <svg class="visual-motif" viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Constraint nodes -->
+                  <circle cx="140" cy="50" r="16" fill="url(#gradCyan)"/>
+                  <circle cx="60" cy="120" r="14" fill="url(#gradBlue)"/>
+                  <circle cx="220" cy="120" r="14" fill="url(#gradBlue)"/>
+                  <circle cx="80" cy="210" r="15" fill="url(#gradPurple)"/>
+                  <circle cx="200" cy="210" r="15" fill="url(#gradPurple)"/>
+                  <circle cx="140" cy="150" r="20" fill="url(#gradCyan)"/>
+                  <!-- Edges -->
+                  <line x1="140" y1="50" x2="60" y2="120" stroke="rgba(0, 229, 255, 0.4)" stroke-width="2"/>
+                  <line x1="140" y1="50" x2="220" y2="120" stroke="rgba(0, 229, 255, 0.4)" stroke-width="2"/>
+                  <line x1="140" y1="50" x2="140" y2="150" stroke="rgba(0, 229, 255, 0.5)" stroke-width="2" stroke-dasharray="4 4"/>
+                  <line x1="60" y1="120" x2="140" y2="150" stroke="rgba(33, 150, 243, 0.4)" stroke-width="2"/>
+                  <line x1="220" y1="120" x2="140" y2="150" stroke="rgba(33, 150, 243, 0.4)" stroke-width="2"/>
+                  <line x1="60" y1="120" x2="80" y2="210" stroke="rgba(126, 87, 194, 0.4)" stroke-width="2"/>
+                  <line x1="220" y1="120" x2="200" y2="210" stroke="rgba(126, 87, 194, 0.4)" stroke-width="2"/>
+                  <line x1="140" y1="150" x2="80" y2="210" stroke="rgba(0, 229, 255, 0.4)" stroke-width="2"/>
+                  <line x1="140" y1="150" x2="200" y2="210" stroke="rgba(0, 229, 255, 0.4)" stroke-width="2"/>
+                  <line x1="80" y1="210" x2="200" y2="210" stroke="rgba(126, 87, 194, 0.3)" stroke-width="2" stroke-dasharray="4 4"/>
+
+                  <defs>
+                    <linearGradient id="gradCyan" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="#00E5FF"/>
+                      <stop offset="100%" stop-color="#00BCD4"/>
+                    </linearGradient>
+                    <linearGradient id="gradBlue" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="#2196F3"/>
+                      <stop offset="100%" stop-color="#0D47A1"/>
+                    </linearGradient>
+                    <linearGradient id="gradPurple" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="#9575CD"/>
+                      <stop offset="100%" stop-color="#5E35B1"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <div class="visual-badge">
+                  <span>OR-Tools CP-SAT</span>
+                </div>
+              </div>
+
+              <div class="case-info">
+                <div class="case-meta">
+                  <span class="case-type">Smart India Hackathon (SIH)</span>
+                  <span class="case-role">Role: System Architect &amp; AI Developer</span>
+                </div>
+
+                <h3 class="case-title" id="proj1-title">Smart Classroom and Timetable Scheduler</h3>
+
+                <p class="case-abstract">
+                  Researched the critical teacher shortage problem across rural India (9,000+ single-teacher schools). Formulated a mathematical "Focused Rotation" timetable schedule model and implemented a constraint optimization solver using <strong>Google OR-Tools</strong> for conflict-free, multi-grade student rotation schedules with hybrid offline-first synchronization.
+                </p>
+
+                <div class="case-highlights">
+                  <div class="highlight-item">
+                    <span class="highlight-num">9,000+</span>
+                    <span class="highlight-label">Schools Modeled</span>
+                  </div>
+                  <div class="highlight-item">
+                    <span class="highlight-num">CSP</span>
+                    <span class="highlight-label">Constraint Formulation</span>
+                  </div>
+                  <div class="highlight-item">
+                    <span class="highlight-num">~90%</span>
+                    <span class="highlight-label">Completion Status</span>
+                  </div>
+                </div>
+
+                <div class="case-tags">
+                  <span class="tag-pill">Python</span>
+                  <span class="tag-pill">Google OR-Tools</span>
+                  <span class="tag-pill">Constraint Optimization</span>
+                  <span class="tag-pill">System Architecture</span>
+                  <span class="tag-pill">Offline-First</span>
+                </div>
+
+                <div class="case-footer">
+                  <button class="btn btn-expand" data-dialog="dialog-sih" aria-haspopup="dialog">
+                    <span>Read Full Case Study</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                      <path d="M6 12l4-4-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                  <span class="status-note">Status: Reached ~90% completion · Paper draft in progress</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Behavioral E-Learning Management System -->
+          <article class="project-case-study reveal" aria-labelledby="proj2-title">
+            <div class="case-study-body">
+              <div class="case-visual visual-learning" aria-hidden="true">
+                <!-- SVG interaction/learning loops motif -->
+                <svg class="visual-motif" viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Concentric behavioral feedback circles -->
+                  <circle cx="140" cy="140" r="110" fill="none" stroke="rgba(149, 117, 205, 0.2)" stroke-width="2" stroke-dasharray="6 6"/>
+                  <circle cx="140" cy="140" r="85" fill="none" stroke="rgba(0, 229, 255, 0.25)" stroke-width="2"/>
+                  <circle cx="140" cy="140" r="60" fill="none" stroke="rgba(244, 143, 177, 0.3)" stroke-width="2" stroke-dasharray="4 4"/>
+                  <!-- Orbiting nodes -->
+                  <circle cx="140" cy="55" r="14" fill="#00E5FF"/>
+                  <circle cx="215" cy="185" r="12" fill="#7E57C2"/>
+                  <circle cx="65" cy="185" r="12" fill="#FF758F"/>
+                  <!-- Core verification node -->
+                  <circle cx="140" cy="140" r="26" fill="url(#gradPurple)"/>
+                  <path d="M132 140l5 5 12-12" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="visual-badge">
+                  <span>NLP &amp; Behavioral Verification</span>
+                </div>
+              </div>
+
+              <div class="case-info">
+                <div class="case-meta">
+                  <span class="case-type">Final-Year BCA Project</span>
+                  <span class="case-role">Role: System Architect &amp; NLP Implementer</span>
+                </div>
+
+                <h3 class="case-title" id="proj2-title">Behavioral E-Learning Management System (ELMS)</h3>
+
+                <p class="case-abstract">
+                  Designed and developed an interactive learning platform introducing a novel <strong>"Truth or Dare"</strong> concept verification protocol to counter passive consumption in digital education. Engineered NLP chatbot workflows to provide contextual query resolution, adaptive question prompts, and accountability tracking.
+                </p>
+
+                <div class="case-highlights">
+                  <div class="highlight-item">
+                    <span class="highlight-num">Active Recall</span>
+                    <span class="highlight-label">Behavioral Model</span>
+                  </div>
+                  <div class="highlight-item">
+                    <span class="highlight-num">NLP</span>
+                    <span class="highlight-label">Adaptive Queries</span>
+                  </div>
+                  <div class="highlight-item">
+                    <span class="highlight-num">MERN</span>
+                    <span class="highlight-label">Full-Stack Core</span>
+                  </div>
+                </div>
+
+                <div class="case-tags">
+                  <span class="tag-pill">Python</span>
+                  <span class="tag-pill">NLP</span>
+                  <span class="tag-pill">MongoDB</span>
+                  <span class="tag-pill">Express.js</span>
+                  <span class="tag-pill">React</span>
+                  <span class="tag-pill">Node.js</span>
+                </div>
+
+                <div class="case-footer">
+                  <button class="btn btn-expand" data-dialog="dialog-elms" aria-haspopup="dialog">
+                    <span>Read Full Case Study</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                      <path d="M6 12l4-4-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                  <span class="status-note">Status: Completed · Full research paper drafted (awaiting publication evaluation)</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Cutout divider -->
+      <div class="section-divider divider-wave-reverse" aria-hidden="true">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,50 C360,10 720,90 1080,40 C1260,15 1380,30 1440,50 L1440,100 L0,100 Z" fill="var(--bg-card)"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         ACCESSIBLE DIALOGS FOR DETAILED CASE STUDIES
+         ═══════════════════════════════════════════ -->
+
+    <!-- Dialog: SIH Scheduler -->
+    <dialog class="case-modal" id="dialog-sih" aria-labelledby="modal-sih-title">
+      <div class="modal-box">
+        <div class="modal-header header-sih">
+          <div class="modal-header-meta">
+            <span class="modal-pill">Smart India Hackathon</span>
+            <span class="modal-role">System Architect &amp; AI Developer</span>
+          </div>
+          <h3 class="modal-title" id="modal-sih-title">Smart Classroom and Timetable Scheduler</h3>
+          <button class="modal-close" aria-label="Close dialog">&times;</button>
+        </div>
+
+        <div class="modal-content">
+          <div class="modal-section">
+            <h4 class="modal-section-title">The Real-World Problem</h4>
+            <p>
+              In rural India, more than 9,000 schools operate with only a single teacher managing multiple primary and middle grade levels simultaneously. In this multi-grade environment, classical static timetables result in idle student cohorts, unstructured teaching hours, and high teacher burnout. The challenge was compounded by limited or intermittent internet connectivity in remote villages.
+            </p>
+          </div>
+
+          <div class="modal-section">
+            <h4 class="modal-section-title">The Algorithmic Approach</h4>
+            <p>
+              Conceived a mathematical "Focused Rotation" schedule framework. Rather than forcing one teacher to lecture simultaneously to disparate grades, the school day is divided into rotating instructional, peer-study, and self-directed activity blocks. The scheduling model was formulated as a Constraint Satisfaction Problem (CSP) balancing:
+            </p>
+            <ul class="modal-bullets">
+              <li><strong>Hard Constraints:</strong> No teacher double-booking, max classroom occupancy, mandatory curriculum coverage per grade level.</li>
+              <li><strong>Soft Constraints:</strong> Balanced subject distribution across weekdays, optimal placement of high-focus subjects (Mathematics, Science) in morning blocks, and minimized student context switching.</li>
+            </ul>
+          </div>
+
+          <div class="modal-section">
+            <h4 class="modal-section-title">Technical Implementation</h4>
+            <p>
+              Developed in Python leveraging <strong>Google OR-Tools CP-SAT</strong> solver. Modeled integer decision variables for teacher assignments, room allocations, and slot matrices. Implemented custom scoring penalties for soft constraint violations. Designed an offline-first data layer allowing schedules to be computed or loaded locally without requiring active network connectivity.
+            </p>
+          </div>
+
+          <div class="modal-section">
+            <h4 class="modal-section-title">Current Status &amp; Research Outcome</h4>
+            <p>
+              The project was built for the Smart India Hackathon (SIH), reaching approximately <strong>90% completion</strong>. The core constraint solver and scheduling algorithms were validated against simulated school profiles. A comprehensive research paper draft documenting the scheduling model and comparative efficiency metrics is currently in progress.
+            </p>
+          </div>
+
+          <div class="modal-tags">
+            <span class="tag-pill">Python 3</span>
+            <span class="tag-pill">Google OR-Tools</span>
+            <span class="tag-pill">CP-SAT Solver</span>
+            <span class="tag-pill">Constraint Optimization</span>
+            <span class="tag-pill">Mathematical Modeling</span>
+            <span class="tag-pill">Offline-First Architecture</span>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- Dialog: ELMS -->
+    <dialog class="case-modal" id="dialog-elms" aria-labelledby="modal-elms-title">
+      <div class="modal-box">
+        <div class="modal-header header-elms">
+          <div class="modal-header-meta">
+            <span class="modal-pill">Final-Year BCA Capstone</span>
+            <span class="modal-role">System Architect &amp; NLP Implementer</span>
+          </div>
+          <h3 class="modal-title" id="modal-elms-title">Behavioral E-Learning Management System (ELMS)</h3>
+          <button class="modal-close" aria-label="Close dialog">&times;</button>
+        </div>
+
+        <div class="modal-content">
+          <div class="modal-section">
+            <h4 class="modal-section-title">The Real-World Problem</h4>
+            <p>
+              Mainstream learning platforms suffer from low course completion rates and superficial passive consumption. Students often watch video modules or click through slides without active cognitive retention or behavioral accountability, leading to poor conceptual retention.
+            </p>
+          </div>
+
+          <div class="modal-section">
+            <h4 class="modal-section-title">The Behavioral Framework: "Truth or Dare"</h4>
+            <p>
+              Pioneered an active verification loop coined "Truth or Dare":
+            </p>
+            <ul class="modal-bullets">
+              <li><strong>Truth Modules:</strong> Evaluative conceptual challenges where students must explain, verify, or dissect learned concepts rather than picking multiple-choice guesses.</li>
+              <li><strong>Dare Modules:</strong> Practical applied mini-tasks (writing code snippets, solving targeted algorithmic edge cases, or formulating structured explanations) that require proof of mastery.</li>
+            </ul>
+          </div>
+
+          <div class="modal-section">
+            <h4 class="modal-section-title">Technical Implementation</h4>
+            <p>
+              Constructed full-stack on the MERN stack (MongoDB, Express.js, React, Node.js). Embedded a Python NLP backend using tokenization, intent recognition, and similarity heuristics to provide automated contextual grading and conversational chatbot assistance. Student engagement metrics, recall latency, and verification states were structured in MongoDB.
+            </p>
+          </div>
+
+          <div class="modal-section">
+            <h4 class="modal-section-title">Current Status &amp; Research Outcome</h4>
+            <p>
+              Successfully completed as the final-year BCA project at Integral University. Synthesized the findings into a complete research paper articulating the behavioral verification framework, currently drafted and awaiting publication evaluation.
+            </p>
+          </div>
+
+          <div class="modal-tags">
+            <span class="tag-pill">Python</span>
+            <span class="tag-pill">NLP Tokenization &amp; Intent</span>
+            <span class="tag-pill">MongoDB</span>
+            <span class="tag-pill">Express.js</span>
+            <span class="tag-pill">React</span>
+            <span class="tag-pill">Node.js</span>
+            <span class="tag-pill">RESTful APIs</span>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- ═══════════════════════════════════════════
+         EDUCATION SECTION
+         ═══════════════════════════════════════════ -->
+    <section id="education" class="section section-education" aria-labelledby="edu-heading">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <div class="section-tag">
+            <span class="tag-gem" aria-hidden="true"></span>
+            <span>Academic Milestones</span>
+          </div>
+          <h2 class="section-title" id="edu-heading">Education</h2>
+          <p class="section-subtext">
+            A continuous progression marked by academic restructuring, discipline, and graduate study in Artificial Intelligence.
+          </p>
+        </div>
+
+        <!-- Visual connected timeline with organic nodes -->
+        <div class="timeline-wrapper reveal">
+          <div class="timeline-track" aria-hidden="true"></div>
+
+          <div class="timeline-nodes-list" role="list">
+            <!-- Node 1: M.Sc. AI -->
+            <div class="timeline-node" role="listitem">
+              <div class="node-marker marker-active" aria-hidden="true">
+                <span class="marker-ring"></span>
+                <span class="marker-core"></span>
+              </div>
+              <div class="node-content">
+                <div class="node-date-badge">2026 — Present · Sem 1 Ongoing</div>
+                <h3 class="node-degree">M.Sc. Computer Science (Artificial Intelligence)</h3>
+                <div class="node-institution">Sacred Heart College</div>
+                <p class="node-description">
+                  Coursework includes <strong>AI and Knowledge Representation</strong> and <strong>Foundations of Data Analytics</strong>. Dedicated to building deep theoretical fundamentals, practical experimental rigor, and pursuing research internship opportunities in embodied intelligence.
+                </p>
+              </div>
+            </div>
+
+            <!-- Node 2: BCA -->
+            <div class="timeline-node" role="listitem">
+              <div class="node-marker" aria-hidden="true">
+                <span class="marker-ring"></span>
+                <span class="marker-core"></span>
+              </div>
+              <div class="node-content">
+                <div class="node-date-badge">Graduated 2023 · CGPA 8.0 / 10.0</div>
+                <h3 class="node-degree">Bachelor of Computer Applications (BCA)</h3>
+                <div class="node-institution">Integral University, Lucknow</div>
+                <p class="node-description">
+                  Demonstrated significant academic resilience: after early academic friction (5.50 SGPA in Semester 2), restructured daily learning habits and problem-solving methodology, earning a consistent <strong>9.50 SGPA</strong> across Semesters 4, 5, and 6. Completed Behavioral ELMS as the capstone.
+                </p>
+              </div>
+            </div>
+
+            <!-- Node 3: Class XII -->
+            <div class="timeline-node" role="listitem">
+              <div class="node-marker" aria-hidden="true">
+                <span class="marker-ring"></span>
+                <span class="marker-core"></span>
+              </div>
+              <div class="node-content">
+                <div class="node-date-badge">2021 · Aggregate 55.8%</div>
+                <h3 class="node-degree">Class XII — Arts with Computer Application</h3>
+                <div class="node-institution">Municipal Inter College, Sitapur</div>
+                <p class="node-description">
+                  Initial introduction to computing principles, software tools, and introductory logic which sparked long-term interest in computing systems.
+                </p>
+              </div>
+            </div>
+
+            <!-- Node 4: Class X -->
+            <div class="timeline-node" role="listitem">
+              <div class="node-marker" aria-hidden="true">
+                <span class="marker-ring"></span>
+                <span class="marker-core"></span>
+              </div>
+              <div class="node-content">
+                <div class="node-date-badge">2021 · Aggregate 66.0%</div>
+                <h3 class="node-degree">Class X Secondary Education</h3>
+                <div class="node-institution">Govt. Inter College, Sitapur</div>
+                <p class="node-description">
+                  Foundational secondary schooling with science, mathematics, and language curricula.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cutout divider -->
+      <div class="section-divider divider-curve-reverse" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,80 C480,0 960,0 1440,80 L1440,80 L0,80 Z" fill="var(--bg-card)"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SKILLS SECTION
+         ═══════════════════════════════════════════ -->
+    <section id="skills" class="section section-skills" aria-labelledby="skills-heading">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <div class="section-tag">
+            <span class="tag-gem" aria-hidden="true"></span>
+            <span>Skill Ecosystem</span>
+          </div>
+          <h2 class="section-title" id="skills-heading">Skills &amp; Technical Tools</h2>
+          <p class="section-subtext">
+            An interactive ecosystem of programming languages, algorithmic paradigms, database engines, and system architecture practices.
+          </p>
+        </div>
+
+        <!-- Filter tabs for skill categories -->
+        <div class="skills-filter-bar reveal" role="tablist" aria-label="Skill categories">
+          <button class="skill-filter-btn active" role="tab" aria-selected="true" data-filter="all">All Disciplines</button>
+          <button class="skill-filter-btn" role="tab" aria-selected="false" data-filter="prog">Programming</button>
+          <button class="skill-filter-btn" role="tab" aria-selected="false" data-filter="ai">AI &amp; Optimization</button>
+          <button class="skill-filter-btn" role="tab" aria-selected="false" data-filter="algo">Algorithms</button>
+          <button class="skill-filter-btn" role="tab" aria-selected="false" data-filter="db">Databases</button>
+          <button class="skill-filter-btn" role="tab" aria-selected="false" data-filter="web">Web &amp; Systems</button>
+        </div>
+
+        <!-- Interactive Skills Cloud -->
+        <div class="skills-cloud reveal" id="skillsCloud">
+          <!-- Programming -->
+          <div class="skill-bubble bubble-cyan" data-cat="prog" data-related="algo,ai">
+            <span class="bubble-icon">🐍</span>
+            <span class="bubble-text">Python</span>
+            <span class="bubble-cat-tag">Core Lang</span>
+          </div>
+
+          <div class="skill-bubble bubble-blue" data-cat="prog" data-related="algo,web">
+            <span class="bubble-icon">☕</span>
+            <span class="bubble-text">Java</span>
+            <span class="bubble-cat-tag">OOP &amp; Logic</span>
+          </div>
+
+          <div class="skill-bubble bubble-cyan" data-cat="prog" data-related="web">
+            <span class="bubble-icon">⚡</span>
+            <span class="bubble-text">JavaScript</span>
+            <span class="bubble-cat-tag">ES6+</span>
+          </div>
+
+          <div class="skill-bubble bubble-blue" data-cat="prog" data-related="web,db">
+            <span class="bubble-icon">🐘</span>
+            <span class="bubble-text">PHP</span>
+            <span class="bubble-cat-tag">Backend</span>
+          </div>
+
+          <div class="skill-bubble bubble-teal" data-cat="prog" data-related="web">
+            <span class="bubble-icon">🌐</span>
+            <span class="bubble-text">HTML5 / CSS3</span>
+            <span class="bubble-cat-tag">Semantic Web</span>
+          </div>
+
+          <!-- AI & Optimization -->
+          <div class="skill-bubble bubble-purple" data-cat="ai" data-related="prog,algo">
+            <span class="bubble-icon">🧩</span>
+            <span class="bubble-text">Constraint Optimization</span>
+            <span class="bubble-cat-tag">CSP Modeling</span>
+          </div>
+
+          <div class="skill-bubble bubble-purple" data-cat="ai" data-related="prog,ai">
+            <span class="bubble-icon">⚙️</span>
+            <span class="bubble-text">Google OR-Tools</span>
+            <span class="bubble-cat-tag">CP-SAT Solver</span>
+          </div>
+
+          <div class="skill-bubble bubble-mint" data-cat="ai" data-related="prog,web">
+            <span class="bubble-icon">💬</span>
+            <span class="bubble-text">NLP Fundamentals</span>
+            <span class="bubble-cat-tag">Intent &amp; Parsing</span>
+          </div>
+
+          <!-- Algorithms -->
+          <div class="skill-bubble bubble-teal" data-cat="algo" data-related="prog">
+            <span class="bubble-icon">⚡</span>
+            <span class="bubble-text">Divide and Conquer</span>
+            <span class="bubble-cat-tag">Paradigm</span>
+          </div>
+
+          <div class="skill-bubble bubble-mint" data-cat="algo" data-related="prog,ai">
+            <span class="bubble-icon">🎯</span>
+            <span class="bubble-text">Greedy Methods</span>
+            <span class="bubble-cat-tag">Optimization</span>
+          </div>
+
+          <div class="skill-bubble bubble-blue" data-cat="algo" data-related="prog">
+            <span class="bubble-icon">📊</span>
+            <span class="bubble-text">Algorithm Analysis</span>
+            <span class="bubble-cat-tag">Complexity &amp; Big-O</span>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-bubble bubble-coral" data-cat="db" data-related="web,prog">
+            <span class="bubble-icon">🐬</span>
+            <span class="bubble-text">MySQL</span>
+            <span class="bubble-cat-tag">Relational RDBMS</span>
+          </div>
+
+          <div class="skill-bubble bubble-coral" data-cat="db" data-related="web,prog">
+            <span class="bubble-icon">🍃</span>
+            <span class="bubble-text">MongoDB</span>
+            <span class="bubble-cat-tag">NoSQL Document Store</span>
+          </div>
+
+          <!-- Web & Systems -->
+          <div class="skill-bubble bubble-cyan" data-cat="web" data-related="prog,db">
+            <span class="bubble-icon">🔌</span>
+            <span class="bubble-text">REST API Design</span>
+            <span class="bubble-cat-tag">System Interfaces</span>
+          </div>
+
+          <div class="skill-bubble bubble-purple" data-cat="web" data-related="prog,db">
+            <span class="bubble-icon">⚛️</span>
+            <span class="bubble-text">MERN Stack</span>
+            <span class="bubble-cat-tag">Full-Stack Framework</span>
+          </div>
+
+          <div class="skill-bubble bubble-blue" data-cat="web" data-related="ai,web">
+            <span class="bubble-icon">🏗️</span>
+            <span class="bubble-text">System Architecture</span>
+            <span class="bubble-cat-tag">Scalable Topology</span>
+          </div>
+
+          <div class="skill-bubble bubble-teal" data-cat="web" data-related="web">
+            <span class="bubble-icon">🔄</span>
+            <span class="bubble-text">SDLC Principles</span>
+            <span class="bubble-cat-tag">Process &amp; Quality</span>
+          </div>
+
+          <div class="skill-bubble bubble-mint" data-cat="web" data-related="prog">
+            <span class="bubble-icon">🐙</span>
+            <span class="bubble-text">Git &amp; GitHub</span>
+            <span class="bubble-cat-tag">Version Control</span>
+          </div>
+        </div>
+
+        <div class="skills-hint">
+          <span>Tip: Hover or tap any skill node to highlight its complementary technologies in the ecosystem.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CONTACT SECTION
+         ═══════════════════════════════════════════ -->
+    <section id="contact" class="section section-contact" aria-labelledby="contact-heading">
+      <!-- Artwork-inspired background cutout silhouettes and subtle bubble clusters -->
+      <div class="contact-backdrop" aria-hidden="true">
+        <div class="contact-bubble cb-1"></div>
+        <div class="contact-bubble cb-2"></div>
+        <div class="contact-bubble cb-3"></div>
+        <div class="contact-bubble cb-4"></div>
+      </div>
+
+      <div class="section-container contact-container reveal">
+        <div class="contact-card">
+          <div class="section-tag tag-light">
+            <span class="tag-gem" aria-hidden="true"></span>
+            <span>Connect &amp; Collaborate</span>
+          </div>
+
+          <h2 class="contact-title" id="contact-heading">Let's Connect &amp; Explore Research Ideas</h2>
+
+          <p class="contact-intro">
+            I am actively seeking <strong>research internships</strong>, academic mentorship, and collaborative problem-solving opportunities in Artificial Intelligence, constraint satisfaction, and intelligent agents.
+          </p>
+
+          <!-- Contact Channels -->
+          <div class="contact-methods">
+            <!-- Email -->
+            <div class="method-card">
+              <div class="method-icon-wrap" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="method-info">
+                <span class="method-label">Direct Email</span>
+                <a href="mailto:fairishayan@gmail.com" class="method-link">fairishayan@gmail.com</a>
+              </div>
+              <button class="btn-copy" id="copyEmailBtn" aria-label="Copy email address to clipboard" data-email="fairishayan@gmail.com">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <span class="copy-text">Copy</span>
+              </button>
+            </div>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/fairishayan" target="_blank" rel="noopener noreferrer" class="method-card method-external" aria-label="Visit Fairish Ayan's LinkedIn profile">
+              <div class="method-icon-wrap" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <div class="method-info">
+                <span class="method-label">LinkedIn</span>
+                <span class="method-link">linkedin.com/in/fairishayan</span>
+              </div>
+              <div class="external-arrow" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/fairishayan" target="_blank" rel="noopener noreferrer" class="method-card method-external" aria-label="Visit Fairish Ayan's GitHub profile">
+              <div class="method-icon-wrap" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="method-info">
+                <span class="method-label">GitHub</span>
+                <span class="method-link">github.com/fairishayan</span>
+              </div>
+              <div class="external-arrow" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-footer">
+            <p>&copy; 2026 Fairish Ayan · Designed from the Marine Relief Artwork · Built with Semantic HTML, CSS &amp; Vanilla JavaScript</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
