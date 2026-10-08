@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articles — Fairish Ayan</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="articles.css">
+</head>
+<body>
+  <main style="max-width:900px;margin:120px auto 80px;padding:0 24px;">
+    <div style="text-align:center;margin-bottom:48px;">
+      <h1 style="font-size:3rem;font-weight:700;margin:16px 0;">Articles</h1>
+      <p style="color:#64748b;">Notes, essays, and reflections.</p>
+    </div>
+
+    <div style="display:flex;gap:8px;justify-content:center;margin-bottom:40px;border-bottom:1px solid #e2e8f0;">
+      <button class="tab active" data-tab="academic" style="padding:12px 24px;background:none;border:none;font-size:1rem;font-weight:600;color:#0ea5e9;cursor:pointer;border-bottom:2px solid #0ea5e9;">Academic</button>
+      <button class="tab" data-tab="personal" style="padding:12px 24px;background:none;border:none;font-size:1rem;font-weight:600;color:#64748b;cursor:pointer;border-bottom:2px solid transparent;">Personal</button>
+    </div>
+
+    <div id="articles-list" style="display:grid;gap:20px;"></div>
+  </main>
+
+  <script>
+    async function loadArticles() {
+      const container = document.getElementById('articles-list');
+      try {
+        const res = await fetch('/articles/articles.json');
+        const data = await res.json();
+        renderTab('academic', data);
+        document.querySelectorAll('.tab').forEach(tab => {
+          tab.addEventListener('click', () => {
+            document.querySelectorAll('.tab').forEach(t => {
+              t.classList.remove('active');
+              t.style.color = '#64748b';
+              t.style.borderBottomColor = 'transparent';
+            });
+            tab.classList.add('active');
+            tab.style.color = '#0ea5e9';
+            tab.style.borderBottomColor = '#0ea5e9';
+            renderTab(tab.dataset.tab, data);
+          });
+        });
+      } catch (e) {
+        container.innerHTML = '<p>Could not load articles.</p>';
+      }
+    }
+
+    function renderTab(tab, data) {
+      const container = document.getElementById('articles-list');
+      const items = data[tab] || [];
+      if (!items.length) {
+        container.innerHTML = '<p style="text-align:center;color:#64748b;padding:40px;">No articles yet.</p>';
+        return;
+      }
+      container.innerHTML = items
+        .sort((a, b) => new Date(b.date) - new Date(a.date))
+        .map(a => `
+          <a class="article-card" href="article.html?slug=${a.slug}" style="display:block;padding:28px;border-radius:16px;background:#fff;border:1px solid #e2e8f0;text-decoration:none;color:inherit;">
+            <div style="font-size:0.85rem;color:#64748b;margin-bottom:8px;">${new Date(a.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</div>
+            <h2 style="font-size:1.4rem;margin:8px 0;color:#0f172a;">${a.title}</h2>
+            <p style="color:#64748b;line-height:1.6;">${a.excerpt || ''}</p>
+            <span style="color:#0ea5e9;font-weight:600;">Read →</span>
+          </a>
+        `).join('');
+    }
+
+    loadArticles();
+  </script>
+</body>
+</html>

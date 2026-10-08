@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article — Fairish Ayan</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="articles.css">
+</head>
+<body>
+  <main style="max-width:800px;margin:120px auto 80px;padding:0 24px;">
+    <a href="articles.html" style="display:inline-block;margin-bottom:32px;color:#64748b;text-decoration:none;">← Back to all articles</a>
+    <article id="article-content">
+      <p>Loading…</p>
+    </article>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    (async function() {
+      const container = document.getElementById('article-content');
+      const slug = new URLSearchParams(window.location.search).get('slug');
+      if (!slug) { container.innerHTML = '<p>No article specified.</p>'; return; }
+
+      try {
+        const res = await fetch('/articles/articles.json');
+        const data = await res.json();
+        const all = [...(data.academic || []), ...(data.personal || [])];
+        const meta = all.find(a => a.slug === slug);
+        if (!meta) { container.innerHTML = '<p>Article not found.</p>'; return; }
+
+        document.title = meta.title + ' — Fairish Ayan';
+        const mdRes = await fetch('/articles/' + meta.file);
+        const md = await mdRes.text();
+
+        container.innerHTML =
+          '<header style="margin-bottom:40px;">' +
+            '<div style="color:#64748b;font-size:0.9rem;margin-bottom:12px;">' +
+              new Date(meta.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) +
+            '</div>' +
+            '<h1 style="font-size:2.5rem;line-height:1.2;">' + meta.title + '</h1>' +
+          '</header>' +
+          '<div class="prose">' + marked.parse(md.replace(/^---[\s\S]*?---\s*/, '')) + '</div>';
+      } catch (e) {
+        console.error(e);
+        container.innerHTML = '<p>Failed to load article.</p>';
+      }
+    })();
+  </script>
+</body>
+</html>

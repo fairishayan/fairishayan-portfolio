@@ -1,0 +1,77 @@
+{
+  "academic": [],
+  "personal": [
+    {
+      "slug": "psychology-of-love",
+      "title": "The Psychology of Love [Redefined]",
+      "date": "2026-10-08",
+      "tags": ["Love", "Reflection", "Personal"],
+      "excerpt": "What is love? A breakdown of trust, care, and support — and why natural love hits different from planned love.",
+      "file": "personal/psychology-of-love.md"
+    },
+    {
+      "slug": "desires-endless-cycle",
+      "title": "Desires: The Endless Cycle of Life",
+      "date": "2026-10-08",
+      "tags": ["Philosophy", "Psychology", "Reflection"],
+      "excerpt": "Desire rarely disappears — it changes its subject. A reflection on the endless cycle of wanting, adaptation, and what happens when we finally ask why.",
+      "file": "personal/desires-endless-cycle.md"
+    },
+    {
+      "slug": "what-success-means",
+      "title": "What Success Means to Me and Why",
+      "date": "2026-10-08",
+      "tags": ["Success", "Reflection", "Family", "Life Philosophy"],
+      "excerpt": "Success isn't a number in a bank account. For me, it's becoming capable enough to build a life, financially independent enough to protect it, and present enough to actually live it.",
+      "file": "personal/what-success-means.md"
+    },
+    {
+      "slug": "what-ive-achieved",
+      "title": "What I've Achieved in My Life and How",
+      "date": "2026-10-08",
+      "tags": ["Self-Awareness", "Frameworks", "Reflection"],
+      "excerpt": "Emotional control, self-awareness, and frameworks like CDMA, PSI, and a gamified learning system — most of them started as accidents, frustration, and curiosity, not plans.",
+      "file": "personal/what-ive-achieved.md"
+    },
+    {
+      "slug": "do-men-have-harder-life",
+      "title": "Do Men Have a Harder Life Than Women?",
+      "date": "2026-10-08",
+      "tags": ["Gender", "Society", "Reflection", "India"],
+      "excerpt": "Men's and women's difficulties often exist in different dimensions. A closer look at Indian society, generation by generation — and why comparing them directly misses the point.",
+      "file": "personal/do-men-have-harder-life.md"
+    },
+    {
+      "slug": "what-intimacy-means",
+      "title": "What Intimacy Means to Me: Physical and Beyond Physical Touch",
+      "date": "2026-10-08",
+      "tags": ["Intimacy", "Relationships", "Reflection"],
+      "excerpt": "Intimacy has two sides — physical closeness and the connection that remains even when there is no physical closeness at all.",
+      "file": "personal/what-intimacy-means.md"
+    },
+    {
+      "slug": "life-of-a-girl",
+      "title": "What I Think About the Life of a Girl and Why",
+      "date": "2026-10-08",
+      "tags": ["Gender", "Society", "India", "Reflection"],
+      "excerpt": "A girl's life depends on family, culture, geography, and safety. On village, city, and everything in between — and what genuine freedom should actually mean.",
+      "file": "personal/life-of-a-girl.md"
+    },
+    {
+      "slug": "healthy-relationship",
+      "title": "What I Think About a Healthy Relationship and Why",
+      "date": "2026-10-08",
+      "tags": ["Relationships", "Reflection", "Family", "Psychology"],
+      "excerpt": "Four pillars — mutual understanding, transparency, loyalty, and respect — applied across siblings, parents, friends, and couples.",
+      "file": "personal/healthy-relationship.md"
+    },
+    {
+      "slug": "kind-of-father-i-want-to-become",
+      "title": "What Kind of Father I Want to Become",
+      "date": "2026-10-08",
+      "tags": ["Fatherhood", "Parenting", "Family", "Reflection"],
+      "excerpt": "Not a perfect father — a good one. On presence without control, protection without restriction, and raising children who can leave home without guilt.",
+      "file": "personal/kind-of-father-i-want-to-become.md"
+    }
+  ]
+}
